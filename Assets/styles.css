@@ -1,0 +1,198 @@
+body {
+  background-color: rgb(189, 79, 189);
+  padding-bottom: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(189, 79, 189);
+  color: white;
+  height: 65px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.bttns {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  font-family: "ABeeZee", sans-serif;
+}
+
+.logo {
+  margin-right: 60px;
+  font-family: "Satisfy", curvise;
+  font-weight: 400;
+  font-size: x-large;
+}
+
+.greeting {
+  font-family: "Playfiar display", serif;
+  font-size: 55px;
+}
+
+.MQini {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.intro {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+
+.container1 {
+  background: #bd4fbd;
+  background: radial-gradient(
+    circle,
+    rgba(189, 79, 189, 1) 0%,
+    rgba(105, 16, 105, 1) 100%
+  );
+  border-radius: 25px;
+  margin: 20px 175px;
+
+  display: flex;
+  justify-content: center;
+  color: white;
+  gap: 20px;
+  height: 480px;
+  width: 1000px;
+}
+
+.home {
+  margin: 75px 60px 60px 60px;
+  height: 350px;
+  width: 400px;
+}
+
+.MyFace {
+  height: 430px;
+  margin: 50px;
+}
+
+.about {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  margin: 65px 350px;
+}
+
+.container2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.info {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.Projects {
+  height: 700px;
+}
+
+.btn {
+  color: white;
+}
+
+.card-body {
+  background: #bd4fbd;
+  background: radial-gradient(
+    circle,
+    rgba(189, 79, 189, 1) 0%,
+    rgba(105, 16, 105, 1) 100%
+  );
+}
+
+.card-text {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.d-flex {
+  margin-top: 20px;
+}
+
+.ProIntro {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.expo {
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+.connect1 {
+  color: white;
+  width: 550px;
+  padding: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.source {
+  font-family: sans-serif;
+}
+
+.connect2 {
+  padding: 15px 20px;
+  border: 1px solid white;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  border-radius: 15px;
+  margin-bottom: 30px;
+  width: 400px;
+}
+
+input {
+  padding: 16px;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  width: 95%;
+  font-size: 16px;
+  border-radius: 15px;
+  line-height: 20px;
+  color: #272044;
+  margin: 10px;
+}
+
+textarea {
+  padding: 16px;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  width: 95%;
+  font-size: 16px;
+  border-radius: 15px;
+  line-height: 20px;
+  color: #272044;
+  margin: 10px;
+  height: 250px;
+}
+
+.letsConnect {
+  font-family: "DM Serif Display", serif;
+  font-size: 52px;
+}
+
+.form {
+  border: 10%;
+  border-radius: 5px;
+  border-color: white;
+}
