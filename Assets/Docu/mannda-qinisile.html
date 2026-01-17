@@ -1,0 +1,800 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title> </title>
+    <style>
+      body {
+        line-height: 120%;
+        font-family: "Century Gothic";
+        font-size: 10pt;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        margin: 0pt;
+      }
+      li,
+      table {
+        margin-top: 0pt;
+        margin-bottom: 0pt;
+      }
+      h1 {
+        margin-top: 0pt;
+        margin-bottom: 0pt;
+        page-break-inside: avoid;
+        page-break-after: avoid;
+        line-height: 75%;
+        font-family: "Century Gothic";
+        font-size: 10pt;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #000000;
+      }
+      h2 {
+        margin-top: 0pt;
+        margin-bottom: 0pt;
+        page-break-inside: avoid;
+        page-break-after: avoid;
+        line-height: 16pt;
+        font-family: "Century Gothic";
+        font-size: 10pt;
+        font-weight: normal;
+        color: #000000;
+      }
+      h3 {
+        margin-top: 0pt;
+        margin-bottom: 0pt;
+        page-break-inside: avoid;
+        page-break-after: avoid;
+        line-height: 16pt;
+        font-family: "Century Gothic";
+        font-size: 10pt;
+        font-weight: bold;
+        color: #000000;
+      }
+      h4 {
+        margin-top: 0pt;
+        margin-bottom: 0pt;
+        page-break-inside: avoid;
+        page-break-after: avoid;
+        line-height: 22pt;
+        font-family: "Century Gothic";
+        font-size: 14pt;
+        font-weight: bold;
+        font-style: normal;
+        color: #718eb5;
+      }
+      h5 {
+        margin-top: 2pt;
+        margin-bottom: 0pt;
+        page-break-inside: avoid;
+        page-break-after: avoid;
+        line-height: 120%;
+        font-family: "Century Gothic";
+        font-size: 10pt;
+        font-weight: normal;
+        color: #465870;
+      }
+      h6 {
+        margin-top: 2pt;
+        margin-bottom: 0pt;
+        page-break-inside: avoid;
+        page-break-after: avoid;
+        line-height: 120%;
+        font-family: "Century Gothic";
+        font-size: 10pt;
+        font-weight: normal;
+        color: #2f3a4b;
+      }
+      .BalloonText {
+        margin-top: 0pt;
+        margin-bottom: 0pt;
+        line-height: 120%;
+        font-family: "Segoe UI";
+        font-size: 10pt;
+        color: #000000;
+      }
+      .Footer {
+        margin-top: 0pt;
+        margin-bottom: 0pt;
+        line-height: 120%;
+        font-size: 10pt;
+        color: #000000;
+      }
+      .Header {
+        margin-top: 0pt;
+        margin-bottom: 0pt;
+        line-height: 120%;
+        font-size: 10pt;
+        color: #000000;
+      }
+      .ListParagraph {
+        margin-top: 0pt;
+        margin-bottom: 0pt;
+        line-height: 16pt;
+        font-size: 10pt;
+        color: #000000;
+      }
+      .NoSpacing {
+        margin-top: 0pt;
+        margin-bottom: 0pt;
+        line-height: 75%;
+        font-size: 13pt;
+        color: #434343;
+      }
+      .NormalWeb {
+        margin-top: 0pt;
+        margin-bottom: 0pt;
+        line-height: 120%;
+        font-family: "Times New Roman";
+        font-size: 12pt;
+        color: #000000;
+      }
+      .Subtitle {
+        margin-top: 0pt;
+        margin-bottom: 0pt;
+        text-align: center;
+        line-height: 75%;
+        font-family: "Century Gothic";
+        font-size: 12pt;
+        text-transform: uppercase;
+        color: #000000;
+      }
+      .Title {
+        margin-top: 6pt;
+        margin-bottom: 0pt;
+        text-align: center;
+        line-height: 75%;
+        font-family: "Century Gothic";
+        font-size: 30pt;
+        text-transform: uppercase;
+        letter-spacing: 4.5pt;
+        color: #000000;
+      }
+      span.BalloonTextChar {
+        font-family: "Segoe UI";
+        font-size: 10pt;
+        color: #000000;
+      }
+      span.FooterChar {
+        font-size: 10pt;
+        color: #000000;
+      }
+      span.HeaderChar {
+        font-size: 10pt;
+        color: #000000;
+      }
+      span.Heading1Char {
+        font-size: 10pt;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #000000;
+      }
+      span.Heading2Char {
+        font-size: 10pt;
+        color: #000000;
+      }
+      span.Heading3Char {
+        font-family: "Century Gothic";
+        font-size: 10pt;
+        font-weight: bold;
+        color: #000000;
+      }
+      span.Heading4Char {
+        font-size: 14pt;
+        font-weight: bold;
+        color: #718eb5;
+      }
+      span.Heading5Char {
+        font-family: "Century Gothic";
+        color: #465870;
+      }
+      span.Heading6Char {
+        font-family: "Century Gothic";
+        color: #2f3a4b;
+      }
+      span.Hyperlink {
+        text-decoration: underline;
+        color: #0563c1;
+      }
+      span.PlaceholderText {
+        color: #808080;
+      }
+      span.SubtitleChar {
+        font-family: "Century Gothic";
+        font-size: 12pt;
+        text-transform: uppercase;
+        color: #000000;
+      }
+      span.TitleChar {
+        font-family: "Century Gothic";
+        font-size: 30pt;
+        text-transform: uppercase;
+        letter-spacing: 4.5pt;
+        color: #000000;
+      }
+      span.UnresolvedMention1 {
+        color: #605e5c;
+        background-color: #e1dfdd;
+      }
+      .CurrentList1 {
+        margin-left: 32.2pt;
+        text-indent: -18pt;
+      }
+      .CurrentList2 {
+        margin-left: 32.2pt;
+        text-indent: -18pt;
+      }
+      .CurrentList3 {
+        margin-left: 18pt;
+        text-indent: -18pt;
+      }
+      .CurrentList4 {
+        margin-left: 18pt;
+        text-indent: -18pt;
+      }
+      @media (max-width: 900px) {
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        .table-container {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+
+        td,
+        th {
+          padding: 8px;
+          text-align: left;
+          border: 1px solid #ddd;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div style="clear: both">
+        <p class="Header">&#xa0;</p>
+      </div>
+      <p>
+        <span
+          style="height: 0pt; display: block; position: absolute; z-index: -1"
+          ><img
+            src="1768655351_mannda-qinisile/1768655351_mannda-qinisile-1.png"
+            width="816"
+            height="1056"
+            alt=""
+            style="
+              margin-top: -26.25pt;
+              margin-left: -14.2pt;
+              position: absolute;
+            " /></span
+        >&#xa0;
+      </p>
+      <table
+        style="margin-left: 22.5pt; padding: 0pt; border-collapse: collapse"
+      >
+        <tr>
+          <td style="width: 27pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+          <td
+            colspan="8"
+            style="width: 486pt; padding: 0pt; vertical-align: top"
+          >
+            <p class="Title">Mannda Qinisile</p>
+          </td>
+          <td style="width: 22.5pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="width: 27pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+          <td
+            colspan="2"
+            style="
+              width: 144.7pt;
+              border-bottom: 0.75pt solid #000000;
+              padding: 0pt;
+              vertical-align: top;
+            "
+          >
+            <p>&#xa0;</p>
+          </td>
+          <td
+            style="
+              width: 48.8pt;
+              border-bottom: 0.75pt solid #000000;
+              padding: 0pt;
+              vertical-align: top;
+            "
+          >
+            <p>&#xa0;</p>
+          </td>
+          <td
+            colspan="3"
+            style="
+              width: 145.4pt;
+              border-bottom: 0.75pt solid #000000;
+              padding: 0pt;
+              vertical-align: top;
+            "
+          >
+            <p>&#xa0;</p>
+          </td>
+          <td
+            colspan="2"
+            style="
+              width: 147.1pt;
+              border-bottom: 0.75pt solid #000000;
+              padding: 0pt;
+              vertical-align: top;
+            "
+          >
+            <p>&#xa0;</p>
+          </td>
+          <td style="width: 22.5pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+        </tr>
+        <tr style="height: 33.25pt">
+          <td style="width: 27pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+          <td
+            colspan="8"
+            style="
+              width: 486pt;
+              border-top: 0.75pt solid #000000;
+              border-bottom: 0.75pt solid #000000;
+              padding: 0pt;
+              vertical-align: middle;
+            "
+          >
+            <p class="Subtitle">university of pretoria graduate</p>
+          </td>
+          <td style="width: 22.5pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+        </tr>
+        <tr style="height: 17.5pt">
+          <td style="width: 27pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+          <td
+            colspan="2"
+            style="
+              width: 144.7pt;
+              border-top: 0.75pt solid #000000;
+              padding: 0pt;
+              vertical-align: top;
+            "
+          >
+            <p>&#xa0;</p>
+          </td>
+          <td
+            style="
+              width: 48.8pt;
+              border-top: 0.75pt solid #000000;
+              padding: 0pt;
+              vertical-align: top;
+            "
+          >
+            <p>&#xa0;</p>
+          </td>
+          <td
+            colspan="3"
+            style="
+              width: 145.4pt;
+              border-top: 0.75pt solid #000000;
+              padding: 0pt;
+              vertical-align: top;
+            "
+          >
+            <p>&#xa0;</p>
+          </td>
+          <td
+            colspan="2"
+            style="
+              width: 147.1pt;
+              border-top: 0.75pt solid #000000;
+              padding: 0pt;
+              vertical-align: top;
+            "
+          >
+            <p>&#xa0;</p>
+          </td>
+          <td style="width: 22.5pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+        </tr>
+        <tr style="height: 20.25pt">
+          <td style="width: 27pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+          <td
+            style="
+              width: 58.5pt;
+              border-bottom: 0.75pt solid #000000;
+              padding: 0pt;
+              vertical-align: top;
+            "
+          >
+            <h1>CONTACT</h1>
+          </td>
+          <td style="width: 86.2pt; padding: 0pt; vertical-align: top">
+            <h1>&#xa0;</h1>
+          </td>
+          <td style="width: 48.8pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+          <td
+            style="
+              width: 45pt;
+              border-bottom: 0.75pt solid #000000;
+              padding: 0pt;
+              vertical-align: top;
+            "
+          >
+            <h1>PROFILE</h1>
+          </td>
+          <td
+            colspan="3"
+            style="width: 101.25pt; padding: 0pt; vertical-align: top"
+          >
+            <h1>&#xa0;</h1>
+          </td>
+          <td style="width: 146.25pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+          <td style="width: 22.5pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+        </tr>
+        <tr style="height: 157pt">
+          <td style="width: 27pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+          <td
+            colspan="2"
+            style="width: 144.7pt; padding: 0pt; vertical-align: top"
+          >
+            <h2>0633065565</h2>
+            <h2>Mannda.qinisile@gmail.com</h2>
+            <h2>&#xa0;</h2>
+          </td>
+          <td style="width: 48.8pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+          <td
+            colspan="5"
+            style="width: 292.5pt; padding: 0pt; vertical-align: top"
+          >
+            <p>
+              Motivated and analytical graduate with a strong academic
+              foundation in Human Physiology (BSc and BSc Honours with a
+              specialisation in Neurophysiology) and growing technical expertise
+              in web development. Currently completing a comprehensive
+              Full-Stack Web Development course, with hands-on experience in
+              HTML, CSS, Java, JavaScript, and AI-assisted tools. Strong
+              problem-solving ability, excellent communication skills, and
+              proven adaptability through work experience in customer service
+              and support roles.
+            </p>
+          </td>
+          <td style="width: 22.5pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+        </tr>
+        <tr style="height: 21.15pt">
+          <td style="width: 27pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+          <td
+            style="
+              width: 58.5pt;
+              border-bottom: 0.75pt solid #000000;
+              padding: 0pt;
+              vertical-align: top;
+            "
+          >
+            <h1>SKILLS</h1>
+          </td>
+          <td style="width: 86.2pt; padding: 0pt; vertical-align: top">
+            <h1>&#xa0;</h1>
+          </td>
+          <td style="width: 48.8pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+          <td
+            colspan="2"
+            style="
+              width: 67.5pt;
+              border-bottom: 0.75pt solid #000000;
+              padding: 0pt;
+              vertical-align: top;
+            "
+          >
+            <h1><span style="font-weight: normal">&#xa0;</span>EXPERIENCE</h1>
+          </td>
+          <td
+            colspan="2"
+            style="width: 78.75pt; padding: 0pt; vertical-align: top"
+          >
+            <h1>&#xa0;</h1>
+          </td>
+          <td style="width: 146.25pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+          <td style="width: 22.5pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+        </tr>
+        <tr style="height: 148.9pt">
+          <td style="width: 27pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+          <td
+            colspan="2"
+            style="width: 144.7pt; padding: 0pt; vertical-align: top"
+          >
+            <h2>HTML, CSS3, Java, Javascript, version control</h2>
+            <p>Data extraction and organization</p>
+            <p>Microsoft</p>
+            <p>Analytical thinking and problem-solving</p>
+            <p>Time management</p>
+            <p>Team collaboration</p>
+            <p>Adaptability</p>
+            <p>&#xa0;</p>
+            <p>&#xa0;</p>
+          </td>
+          <td style="width: 48.8pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+          <td
+            colspan="5"
+            rowspan="3"
+            style="width: 292.5pt; padding: 0pt; vertical-align: top"
+          >
+            <h2>Student Life Intern - Housecom</h2>
+            <h3>2023-2024</h3>
+            <p>Student Residence / Apartment Building</p>
+            <ul style="margin: 0pt; padding-left: 0pt">
+              <li
+                style="
+                  margin-left: 27.6pt;
+                  padding-left: 8.4pt;
+                  font-family: serif;
+                "
+              >
+                <span style="font-family: &quot;Century Gothic&quot;"
+                  >Assisted with student support initiatives and residence
+                  operations.</span
+                >
+              </li>
+              <li
+                style="
+                  margin-left: 27.6pt;
+                  padding-left: 8.4pt;
+                  font-family: serif;
+                "
+              >
+                <span style="font-family: &quot;Century Gothic&quot;"
+                  >Handled administrative duties, communication, and
+                  coordination.</span
+                >
+              </li>
+              <li
+                style="
+                  margin-left: 27.6pt;
+                  padding-left: 8.4pt;
+                  font-family: serif;
+                "
+              >
+                <span style="font-family: &quot;Century Gothic&quot;"
+                  >Supported event planning and student engagement
+                  activities.</span
+                >
+              </li>
+              <li
+                style="
+                  margin-left: 27.6pt;
+                  padding-left: 8.4pt;
+                  font-family: serif;
+                "
+              >
+                <span style="font-family: &quot;Century Gothic&quot;"
+                  >Developed strong organisational and interpersonal
+                  skills.</span
+                >
+              </li>
+            </ul>
+            <p>&#xa0;</p>
+            <p>&#xa0;</p>
+            <h2>Waitress</h2>
+            <h3>2024-2025</h3>
+            <ul style="margin: 0pt; padding-left: 0pt">
+              <li
+                style="
+                  margin-left: 27.6pt;
+                  page-break-inside: avoid;
+                  page-break-after: avoid;
+                  line-height: 16pt;
+                  padding-left: 8.4pt;
+                  font-family: serif;
+                "
+              >
+                <span style="font-family: &quot;Century Gothic&quot;"
+                  >Delivered high-quality customer service in a fast-paced
+                  environment.</span
+                >
+              </li>
+              <li
+                style="
+                  margin-left: 27.6pt;
+                  page-break-inside: avoid;
+                  page-break-after: avoid;
+                  line-height: 16pt;
+                  padding-left: 8.4pt;
+                  font-family: serif;
+                "
+              >
+                <span style="font-family: &quot;Century Gothic&quot;"
+                  >Managed multiple tasks efficiently under pressure.</span
+                >
+              </li>
+              <li
+                style="
+                  margin-left: 27.6pt;
+                  page-break-inside: avoid;
+                  page-break-after: avoid;
+                  line-height: 16pt;
+                  padding-left: 8.4pt;
+                  font-family: serif;
+                "
+              >
+                <span style="font-family: &quot;Century Gothic&quot;"
+                  >Strengthened communication, teamwork, and problem-solving
+                  skills.</span
+                >
+              </li>
+            </ul>
+            <p>&#xa0;</p>
+            <p>
+              <strong>REFERENCES</strong>
+            </p>
+            <p><strong>Nyasha Sinclar – </strong>House mother</p>
+            <p>0710882399</p>
+            <p>
+              <strong>&#xa0;</strong>
+            </p>
+          </td>
+          <td style="width: 22.5pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+        </tr>
+        <tr style="height: 21.15pt">
+          <td style="width: 27pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+          <td
+            style="
+              width: 58.5pt;
+              border-bottom: 0.75pt solid #000000;
+              padding: 0pt;
+              vertical-align: top;
+            "
+          >
+            <h1>EDUCATION</h1>
+          </td>
+          <td style="width: 86.2pt; padding: 0pt; vertical-align: top">
+            <h1>&#xa0;</h1>
+          </td>
+          <td style="width: 48.8pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+          <td style="width: 22.5pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+        </tr>
+        <tr style="height: 21.15pt">
+          <td style="width: 27pt; padding: 0pt; vertical-align: top">
+            <p>
+              <span
+                style="
+                  height: 0pt;
+                  display: block;
+                  position: absolute;
+                  z-index: 0;
+                "
+                ><img
+                  src="1768655351_mannda-qinisile/1768655351_mannda-qinisile-2.png"
+                  width="186"
+                  height="1"
+                  alt=""
+                  style="
+                    margin-top: 99.1pt;
+                    margin-left: 26.68pt;
+                    position: absolute;
+                  " /></span
+              >&#xa0;
+            </p>
+          </td>
+          <td
+            colspan="2"
+            style="width: 144.7pt; padding: 0pt; vertical-align: top"
+          >
+            <h2>University of Pretoria</h2>
+            <h3>2021-2025</h3>
+            <p>BSc in Human Physiology</p>
+            <p>BSc Hons Human Physiology</p>
+            <h2>&#xa0;</h2>
+            <p>
+              <strong>CERTIFICATIONS &amp; COURSES</strong>
+            </p>
+            <p>
+              <strong>&#xa0;</strong>
+            </p>
+            <p>Web development – Udemy (in progress)</p>
+            <p>
+              SheCodes -HTML, CSS3, Front-End Web development, AI, APIs, Java
+              programing
+            </p>
+            <p>&#xa0;</p>
+          </td>
+          <td style="width: 48.8pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+          <td style="width: 22.5pt; padding: 0pt; vertical-align: top">
+            <p>&#xa0;</p>
+          </td>
+        </tr>
+        <tr style="height: 0pt">
+          <td style="width: 27pt"></td>
+          <td style="width: 58.5pt"></td>
+          <td style="width: 86.2pt"></td>
+          <td style="width: 48.8pt"></td>
+          <td style="width: 45pt"></td>
+          <td style="width: 22.5pt"></td>
+          <td style="width: 77.9pt"></td>
+          <td style="width: 0.85pt"></td>
+          <td style="width: 146.25pt"></td>
+          <td style="width: 22.5pt"></td>
+        </tr>
+      </table>
+      <p>&#xa0;</p>
+      <div style="clear: both">
+        <p class="Footer">&#xa0;</p>
+      </div>
+    </div>
+    <p style="bottom: 10px; right: 10px; position: absolute">
+      <a
+        href="https://wordtohtml.net/?utm_source=wth_free_doc_conversion_link&utm_medium=external"
+        target="_blank"
+        style="font-size: 11px; color: #d0d0d0"
+        >Converted to HTML with WordToHTML.net</a
+      ><span style="font-size: 11px; color: #d0d0d0"> | </span
+      ><a
+        href="https://documentconverter.pro/?utm_source=wth_free_doc_conversion_link&utm_medium=external"
+        target="_blank"
+        style="font-size: 11px; color: #d0d0d0"
+        >Document Converter for Windows</a
+      >
+    </p>
+  </body>
+</html>
